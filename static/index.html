@@ -11,14 +11,9 @@
 
     <form action="/pets/orders" method="POST">
         <label>
-            <input type="radio" name="sex" value="male"> Мужчина
+            Ваше имя
+            <input type="text" name="userName" placeholder="Введите имя">
         </label>
-        <label>
-            <input type="radio" name="sex" value="female"> Женщина
-        </label>
-        <label>
-            <input type="radio" name="sex" value="not stated"> Не решил еще
-        </label><br>
 
         <label>
             Email
@@ -26,14 +21,18 @@
         </label> <br>
 
         <label>
-            Пароль
-            <input type="password" name="password">
+            Выберите животное
+            <select name="favouritePet">
+                <option value="cat" selected>Котик</option>
+                <option value="dog">Собачка</option>
+                <option value="rodion">Родион</option>
+            </select>
         </label>
-        <br><br>
-
-        <button type="submit">Отправить</button>
-        <button type="reset">Сбросить значения</button>
     </form>
+
+    <button type="submit">Отправить</button>
+    <button type="reset">Сбросить значения</button>
+
 
 </main>
 </body>
