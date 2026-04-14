@@ -10,28 +10,30 @@
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="POST">
+        <label>
+            <input type="radio" name="sex" value="male"> Мужчина
+        </label>
+        <label>
+            <input type="radio" name="sex" value="female"> Женщина
+        </label>
+        <label>
+            <input type="radio" name="sex" value="not stated"> Не решил еще
+        </label><br>
+
+        <label>
+            Email
+            <input type="email" name="email" required placeholder="enter email">
+        </label> <br>
+
+        <label>
+            Пароль
+            <input type="password" name="password">
+        </label>
+        <br><br>
+
         <button type="submit">Отправить</button>
+        <button type="reset">Сбросить значения</button>
     </form>
-
-    <label>
-        <input type="radio" name="sex" value="male"> Мужчина
-    </label>
-    <label>
-        <input type="radio" name="sex" value="female"> Женщина
-    </label>
-    <label>
-        <input type="radio" name="sex" value="not stated"> Не решил еще
-    </label><br>
-
-    <label>
-        Email
-        <input type="email" name="email" required placeholder="enter email">
-    </label> <br>
-
-    <label>
-        Пароль
-        <input type="password" name="password">
-    </label>
 
 </main>
 </body>
