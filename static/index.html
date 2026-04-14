@@ -11,27 +11,60 @@
 
     <form action="/pets/orders" method="POST">
         <label>
-            Ваше имя
-            <input type="text" name="userName" placeholder="Введите имя">
-        </label>
-
-        <label>
-            Email
-            <input type="email" name="email" required placeholder="enter email">
-        </label> <br>
-
-        <label>
-            Выберите животное
-            <select name="favouritePet">
+            Вид питомца:
+            <select name="petType">
                 <option value="cat" selected>Котик</option>
                 <option value="dog">Собачка</option>
-                <option value="rodion">Родион</option>
+                <option value="tiger">Тигр</option>
             </select>
-        </label>
+        </label><br><br>
+
+        <label>
+            Имя питомца:
+            <input type="text" name="name" minlength="3" maxlength="50" placeholder="Например: Барсик" value="Барсик">
+        </label><br><br>
+
+        Пол питомца:<br>
+        <label><input type="radio" name="gender" value="boy" checked> Мальчик</label>
+        <label><input type="radio" name="gender" value="girl"> Девочка</label>
+        <label><input type="radio" name="gender" value="none"> Неизвестно</label>
+        <br><br>
+
+        <label>
+            Цвет глаз:
+            <input type="color" name="eyeColor" value="#00ff00">
+        </label><br><br>
+
+        <label>
+            Длина хвоста (от 7 до 120 см):
+            <input type="number" name="tailLength" min="7" max="120" value="20" placeholder="20">
+        </label><br><br>
+
+        <label>
+            Дата рождения:
+            <input type="date" name="dateOfBirth" value="2023-01-01">
+        </label><br><br>
+
+        <label>
+            Ваш Email:
+            <input type="email" name="email" required placeholder="user@example.com" value="user@example.com">
+        </label><br><br>
+
+        <label>
+            Ваш телефон:
+            <input type="tel" name="phone" required placeholder="+7 (999) 111-22-33" value="+70000000000">
+        </label><br><br>
+
+        <label>
+            <input type="checkbox" name="rules" value="true" required checked>
+            Согласен с правилами
+        </label><br><br>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить значения</button>
     </form>
 
-    <button type="submit">Отправить</button>
-    <button type="reset">Сбросить значения</button>
+    
 
 
 </main>
